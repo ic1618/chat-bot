@@ -15,6 +15,7 @@ class ChatApp:
         return "Sorry, we encountered an issue. Please try again later."
 
     def get_chat_response(self, text):
+        # start_flag is used to provide a welcome message only at the beginning of the conversation
         if self.start_flag:
             self.start_flag = False
             return self.formulate_response(self.trie_node.current_node.print_response(), self.get_welcome_message())
