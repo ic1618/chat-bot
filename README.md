@@ -47,3 +47,11 @@ python app.py
 
 https://github.com/ic1618/chat-bot/assets/77613980/ac2675c2-149b-4f95-b199-9a81e300a6c7
 
+## Future work
+
+* Add unit tests for independent scenarios
+* Increase error raising + handling
+* Add solution for scalability (database) in case of larger datasets
+* Provide generative AI responses to user messages (use an API such as the ones from openAI)
+* Add better data structures in case of larger datasets (already using dictionaries for o(1) lookup)
+
