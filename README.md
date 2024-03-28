@@ -42,3 +42,8 @@ cd into your directory
 ```
 python app.py
 ```
+
+## Demo
+
+https://github.com/ic1618/chat-bot/assets/77613980/ac2675c2-149b-4f95-b199-9a81e300a6c7
+
