@@ -15,8 +15,16 @@ def chat():
 
 if __name__ == '__main__':
     file_path = 'data/stock-data.json'
-    with open(file_path, 'r') as file:
-        json_data = json.load(file)
+
+    try:
+        with open(file_path, 'r') as file:
+            json_data = json.load(file)
+    except FileNotFoundError:
+        print(f"Error: File '{file_path}' not found.")
+        exit(1)
+    except json.JSONDecodeError:
+        print(f"Error: Failed to load JSON data from '{file_path}'.")
+        exit(1)
 
     chat_app = ChatApp(json_data)
     app.run()
